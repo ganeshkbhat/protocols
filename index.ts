@@ -18,79 +18,144 @@
 
 export class ProtocolInterface {
   config: any;
-
-  // connect: () => {}
-  // disconnect: () => {}
-  // serve: () => {}
-  // send: () => {}
-  // receive: () => {}
+  connect!: () => any;
+  disconnect!: () => any;
+  serve!: () => any;
+  send!: () => any;
+  receive!: () => any;
 }
 
-export class tcp extends ProtocolInterface {
-  constructor(config: any) {
-    // protocolInterface.call(this, config);
-    super(config)
-  }
+export class tcp implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
+
 }
 
-export class tls extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class tls implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
-export class udp extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class udp implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
-export class socksv4 extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class socksv4 implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
-export class socksv4a extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class socksv4a implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
-export class socksv5 extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class socksv5 implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
-export class socks extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class socks implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
-export class socket extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class socket implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
-export class ftp extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class ftp implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
-export class ftps extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class ftps implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
-export class ws extends ProtocolInterface {
-  constructor(config: any) {
-    super(config)
-  }
+export class ws implements ProtocolInterface {
+  config: any;
+
+  constructor(config: any) {}
+
+  connect(): any { }
+  disconnect(): any { }
+  serve(): any { }
+  send(): any { }
+  receive(): any { }
 }
 
 
@@ -134,15 +199,3 @@ export class handlers {
   }
 }
 
-// module.exports.tcp = tcp;
-// module.exports.tls = tls;
-// module.exports.udp = udp;
-// module.exports.socksv4 = socksv4;
-// module.exports.socksv4a = socksv4a;
-// module.exports.socksv5 = socksv5;
-// module.exports.socks = socks;
-// module.exports.socket = socket;
-// module.exports.ftp = ftp;
-// module.exports.ftps = ftps;
-// module.exports.ws = ws;
-// module.exports.handlers = handlers;
