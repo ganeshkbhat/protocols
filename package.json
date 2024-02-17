@@ -1,0 +1,70 @@
+{
+  "name": "protocols",
+  "version": "1.0.0",
+  "description": "run specific protocols and clients in nodejs",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs"
+    }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "pre-commit": {
+    "run": [
+      "test"
+    ]
+  },
+  "pre-push": {
+    "run": [],
+    "silent": true
+  },
+  "scripts": {
+    "build": "npx tsc && git add .",
+    "test": "mocha --reporter spec --recursive --timeout 60000"
+  },
+  "keywords": [],
+  "author": "Ganesh B <ganeshsurfs@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganeshkbhat/filehandler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ganeshkbhat/filehandler/issues"
+  },
+  "homepage": "https://github.com/ganeshkbhat/filehandler#readme",
+  "dependencies": {
+    "concurrency.js": "^0.0.23-beta",
+    "crypto-js": "^4.1.1",
+    "fsevents": "^2.3.2",
+    "ftps": "^1.2.0",
+    "hasher-apis": "^0.2.7",
+    "http-proxy": "1.18.1",
+    "http-proxy-to-socks": "1.1.2",
+    "node-ipc": "^11.1.0",
+    "shelljs": "0.8.5",
+    "socket-proxy": "^1.1.0",
+    "socket.io-client": "^4.6.1",
+    "socks": "^2.7.1",
+    "ssh2": "^1.11.0",
+    "udp-proxy": "1.2.0",
+    "wait-on": "^7.0.1",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "chai": "^4.4.1",
+    "clean-pkg-json": "^1.2.0",
+    "esbuild": "^0.20.0",
+    "mocha": "^10.2.0",
+    "pre-commit": "^1.2.2",
+    "pre-push": "^0.1.4",
+    "sinon": "^17.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "unimported": "^1.31.1"
+  }
+}
