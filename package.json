@@ -45,6 +45,7 @@
     "http-proxy": "1.18.1",
     "http-proxy-to-socks": "1.1.2",
     "node-ipc": "^11.1.0",
+    "protocol-interfaces": "^1.0.0",
     "shelljs": "0.8.5",
     "socket-proxy": "^1.1.0",
     "socket.io-client": "^4.6.1",
